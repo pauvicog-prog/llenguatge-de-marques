@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validació nativa HTML5</title>
+</head>
+<body>
+    <h1>Formulari amb validació HTML5</h1>
+
+    <form action="#" method="post">
+        <p>
+            <label for="nom">Nom (obligatori):</label><br>
+            <input type="text" id="nom" name="nom" required>
+        </p>
+        <p>
+            <label for="email">Correu electrònic:</label><br>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="password">Contrasenya (mínim 8 caràcters):</label><br>
+            <input type="password" id="password" name="password" minlength="8" required>
+        </p>
+        <p>
+            <label for="telefon">Telèfon (9 dígits):</label><br>
+            <input type="tel" id="telefon" name="telefon" pattern="[0-9]{9}" maxlength="9" placeholder="Ex: 612345678" required>
+        </p>
+        <button type="submit">Validar i enviar</button>
+    </form>
+</body>
+</html>
